@@ -1,4 +1,6 @@
-media: files/media
+media:
+  input: assets/images
+  output: assets/images
 content:
   - name: docs
     label: Pages
