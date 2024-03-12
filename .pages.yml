@@ -2,4 +2,5 @@ media: files/media
 content:
   - name: docs
     label: Pages
-    path: docs/
+    path: docs
+    type: collection
