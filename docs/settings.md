@@ -5,6 +5,7 @@ nav_order: 8
 ---
 ## Response Styles
 Relaxed (Default) - Characters will generally respond with shorter responses and will let the user drive the conversation forward.
+
 Active - Characters will attempt to proactively move the conversation and will frequently take action and make narrative decisions.
 
 ## Users note
@@ -12,10 +13,10 @@ Special instructions to the AI that get included with every message. This can be
 
 
 ## Advanced Settings
-These settings allow you to finely control the way the AI responds to you.
+These settings allow you to finely control the way the AI responds to you. We have selected default settings that work well for most characters. Change these at your own risk!
 
 ### Max new tokens
-Determines the max number of tokens the AI will respond with.
+Determines the max number of tokens the AI will respond with. 
 
 ### Temperature
 Temperature is a value between x….y. A lower temperature results in milder, more predictable conversations. A higher temperature results in more creative but sometimes unpredictable and incoherent conversations when taken too high.
