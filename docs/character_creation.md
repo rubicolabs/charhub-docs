@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Character Creation
-nav_order: 4
+nav_order: 2
 ---
 
-# Hello World
+# Character Creation
+TODO
