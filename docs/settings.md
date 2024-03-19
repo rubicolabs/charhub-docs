@@ -3,6 +3,17 @@ layout: default
 title: Settings
 nav_order: 8
 ---
+
+## User Avatar Image
+This image is shown on your profile and across the platform. We recommend a square 1:1 aspect ratio image.
+
+## Public Description
+This text is displayed on your public profile
+
+## Background Image
+Background images are shown when chatting with a character. Having "Display Custom Chat Background Images" enabled will show either the creator added background image or the image you selected. We recommend a 16:9 image if on desktop or 9:16 image on mobile.
+
+
 ## Response Styles
 Relaxed (Default) - Characters will generally respond with shorter responses and will let the user drive the conversation forward.
 
