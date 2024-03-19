@@ -4,7 +4,8 @@ title: Worlds
 nav_order: 6
 ---
 
-# What are worlds?
+# Worlds
+## What are worlds?
 Because of limitations on [context length](link to context length def), it might not be possible to fit extensive background information or unique details about the world the character lives in. World’s is CharHub’s solution to this problem. It effectively allows you to include a near infinite amount of detail and will automatically include relevant information into the AI’s context so that it can be referenced by the character.
 
 ## What to use worlds for?
