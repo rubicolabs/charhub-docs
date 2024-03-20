@@ -9,4 +9,4 @@ To our creators: We encourage you to relentlessly pursue the highest standards o
 
 And to our users: We trust you to engage with and support content that reflect our community's core values of innovation, creativity, and respect.
 
-If you enjoyed our work on the site, please consider joining our Discord community: https://discord.gg/kc6sB9pn8e
+If you enjoyed our work on the site, please consider joining our Discord community: [https://discord.gg/kc6sB9pn8e](https://discord.gg/kc6sB9pn8e)
