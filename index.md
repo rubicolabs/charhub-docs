@@ -11,7 +11,7 @@ Please review our [Terms of Use](https://charhub.ai/terms_of_use) and [Privacy P
 ## What is Charhub AI?
 Charhub.ai is a platform that allows you to create, share, and chat with any character through the use of Artificial Intelligence (AI). 
 
-Charhub is **uncensored**. We believe that a world where people can freely express creative ideas benefits humanity. We do not restrict the type of interactions you can have with the characters and place faith in our users to make informed decisions about the type of content they choose to engage with on our website.
+Charhub is **uncensored**. We do not restrict the type of interactions you can have with the characters and place faith in our users to make informed decisions about the type of content they choose to create and engage with on our website.
 
 Charhub is **free**. Access to our chat or image generation will never be gated behind any payment methods.
 
