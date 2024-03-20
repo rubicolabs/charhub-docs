@@ -6,11 +6,28 @@ nav_order: 6
 
 # Worlds
 ## What are worlds?
-Because of limitations on [context length](link to context length def), it might not be possible to fit extensive background information or unique details about the world the character lives in. World’s is CharHub’s solution to this problem. It effectively allows you to include a near infinite amount of detail and will automatically include relevant information into the AI’s context so that it can be referenced by the character.
+Worlds are Charhub's implementation of traditional Lorebooks. Worlds expand on your character's knowledge of the world.
 
-## What to use worlds for?
-Worlds are useful for including minute details that might be too verbose to put into the character description. These can include: names and descriptions of places, historical events, important people and their descriptions, past events that have happened to the character, any sort of list, or really any sort of information that might not be relevant to every response.
+## How to create a world?
+1. Navigate to https://charhub.ai/worlds/new
+2. Enter a description for your world. This description does not affect your World.
+3. Enter as many World entries as you'd like, separated by new lines.
+4. Attach the world to a character by navigating into your character's definition, toggling "Advanced Settings" and attaching your World. Currently, you cannot attach a world to a character belonging to another user.
 
-## How to format worlds
-Worlds can be written without any special formatting. It is recommended to write in complete sentences and put a new line after each sentence. Short, bite sized chunks of information tends to work best.
+### World Entry
+You can think of a world entry as a snippet of knowledge that your character may utilize during their conversation with you. 
 
+For example, you may choose to create a character which inhabits a kingdom and define the kingdom using Worlds.
+```
+The Commercial District: The commercial district is located at the northern most point of the kingdom. Nobles can be found here looking for the best deals on gold accessories.
+```
+
+### How are world entries used?
+During your dialogue with a World enabled character, the character will utilize contextual cues to retrieve the most relevant information from the World. In the example given above, the character may suggest the commercial district when asked where one can find jewelry.
+
+### How does it work?
+Every snippet of knowledge you enter is saved via 'embeddings'. Embeddings retain the semantic information of your world entry. Because semantic information is saved, characters can easily ask for information related to the current topic and retrieve the most relevant entries.
+
+You can use the "Explore my World" test tool to visualize what entries will be returned to your character.
+
+![worlds](/assets/worlds.png)
