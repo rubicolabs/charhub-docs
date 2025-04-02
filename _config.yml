@@ -3,7 +3,7 @@ description: Documentation for website charhub.ai
 theme: just-the-docs
 
 url: https://rubicolabs.github.io/charhub-docs/
-color_scheme: auto
+color_scheme: dark
 # Custom JavaScript for dark mode toggle
 assets:
   scripts:
