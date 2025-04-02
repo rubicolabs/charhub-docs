@@ -3,7 +3,7 @@ layout: default
 title: AI Art
 nav_order: 5
 ---
-
+<button onclick="alert('JS is working!')">Test JavaScript</button>
 # AI Art Generation
 ## Prompt
 Prompts define what should be present in the generated image. Charhub automatically augments prompts to ensure that the final output image is of high quality. 
