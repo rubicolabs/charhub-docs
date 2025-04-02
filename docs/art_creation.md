@@ -25,9 +25,18 @@ Image prompts affect the look & feel of the output image. For example, adding an
 
 ![image_prompts](/assets/tutorial.png)
 
-## Prompting Techniques
-### Weight
-You can adjust the weight of a keyword in your prompt or negative prompt by using the syntax '(keyword: weight)'. For example, '(earrings: 1.3)'. A weight greater than 1 means more important while a weight less than 1 means less important.
+## 🎨 Advanced Prompting Techniques  
+
+### ⚖️ Adjusting Prompt Weight  
+
+You can fine-tune the importance of a word using the format:  
+`(keyword: weight)`
+
+- `(earrings: 1.3)` → Makes earrings more prominent.  
+- `(earrings: 0.7)` → De-emphasizes earrings.  
+
+A weight **greater than 1** increases importance, while **less than 1** decreases it.
+
 
 ## Upscaling / Edit
 Once your image is generated, you can use the Upscale button to increase the resolution of your image.
