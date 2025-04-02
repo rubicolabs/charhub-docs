@@ -29,11 +29,10 @@ Image prompts affect the look & feel of the output image. For example, adding an
 
 ### ⚖️ Adjusting Prompt Weight  
 
-You can fine-tune the importance of a word using the format:  
-`(keyword: weight)`
+You can fine-tune the importance of a word using the format:  `(keyword: weight)`
 
-- `(earrings: 1.3)` → Makes earrings more prominent.  
-- `(earrings: 0.7)` → De-emphasizes earrings.  
+- `(earrings:1.3)` → Makes earrings more prominent.  
+- `(earrings:0.7)` → De-emphasizes earrings.  
 
 A weight **greater than 1** increases importance, while **less than 1** decreases it.
 
