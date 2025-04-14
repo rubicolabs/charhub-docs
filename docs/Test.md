@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Comic Style Speech Bubble Test
-nav_exclude: true
+
 ---
 
 <!-- Ghost-chan with Comic Style Speech Bubble -->
