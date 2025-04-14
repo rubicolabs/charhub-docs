@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Ghost-chan Test
-nav_exclude: true
+
 ---
 
 <!-- Ghost-chan with speech bubble -->
