@@ -1,46 +1,48 @@
 ---
 layout: default
-
+title: Ghost-chan Test
+nav_exclude: true
 ---
 
-<div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
+<!-- Character bubble layout -->
+<div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 2rem;">
 
-![Ghost-chan](/assets/ghostchan.png){:style="width:50%;"}
+  <!-- Image on the left -->
+  <img src="/assets/ghostchan.png" alt="Ghost-chan" style="width: 140px; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1);" />
 
-<div style="background-color: #f3f3f3; border-left: 4px solid #aaa; padding: 1em; border-radius: 6px; font-style: italic;">
-“Boo! Don’t be scared—I'm here to help you conjure the *perfect* prompts. Keep your descriptions clear, and don’t forget lighting and emotion!”<br>
-— <strong>Ghost-chan</strong>
+  <!-- Text bubble on the right -->
+  <div style="background-color: #f0f0f0; padding: 1rem; border-left: 4px solid #999; border-radius: 8px; max-width: 600px;">
+    <p style="margin: 0; font-style: italic;">
+      "Hi there! I'm <strong>Ghost-chan</strong>, your spooky-cute prompt tutor. Let me help you bring your ideas to life with AI-generated art!"
+    </p>
+  </div>
+
 </div>
 
-</div>
+---
 
-## What’s a Prompt?
+## What is Prompting?
 
-Prompts describe what should appear in the generated image. The more specific you are, the better your result.
+A prompt tells the AI what to generate. The more detail you add, the better the results!
 
-**Okay**: `a pony`
+**Basic Prompt**:  
+`a pony`
 
-**Better**: `a cute pastel unicorn, floating in a dreamy sky, gentle lighting, glowing stars`
+**Improved Prompt**:  
+`a pastel-colored unicorn with flowing hair, standing in a magical field under the moonlight`
 
 ---
 
-### Negative Prompts
-
-Negative prompts are what you **don’t want** in the image. Think of them as filters that keep things like weird anatomy or unwanted objects out of the picture.
-
-
----
-
-### Bonus Tip from Ghost-chan
+## Ghost-chan’s Tip 👻
 
 <div style="display: flex; align-items: flex-start; gap: 1rem; margin-top: 1rem;">
 
-![Ghost-chan](/assets/ghostchan.png){: style="width: 50%;" }
+  <img src="/assets/ghostchan.png" alt="Ghost-chan" style="width: 120px; border-radius: 10px;" />
 
-<div style="background-color: #eef; border-left: 4px solid #88c; padding: 1em; border-radius: 6px; font-style: italic;">
-“If the picture’s almost perfect but something’s off, try the **Edit** feature to fine-tune the prompt and fix it without starting over.”<br>
-— <strong>Ghost-chan</strong>
+  <div style="background-color: #e8f0ff; padding: 1rem; border-left: 4px solid #66a; border-radius: 8px;">
+    <p style="margin: 0; font-style: italic;">
+      "Don’t forget to use <strong>negative prompts</strong> to keep out stuff you don’t want! Like this: <code>blurry, watermark, text, dark lighting</code>."
+    </p>
+  </div>
+
 </div>
-
-</div>
-
