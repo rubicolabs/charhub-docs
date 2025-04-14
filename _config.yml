@@ -4,6 +4,9 @@ theme: just-the-docs
 
 url: https://rubicolabs.github.io/charhub-docs/
 color_scheme: dark
+markdown: kramdown
+kramdown:
+  input: GFM
 # Custom JavaScript for dark mode toggle
 assets:
   scripts:
