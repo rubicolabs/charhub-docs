@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Ghost-chan's Guide
-nav_exclude: true
+
 ---
 
 <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
