@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Ghost-chan Test
-
+nav_order: 10
 ---
 
 <!-- Ghost-chan with speech bubble -->
