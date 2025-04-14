@@ -6,7 +6,7 @@ title: Ghost-chan's Guide
 
 <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
 
-![Ghost-chan](/assets/images/ghostchan.png){: style="width: 160px; border-radius: 10px;" }
+![Ghost-chan](/assets/images/ghostchan.png)
 
 <div style="background-color: #f3f3f3; border-left: 4px solid #aaa; padding: 1em; border-radius: 6px; font-style: italic;">
 “Boo! Don’t be scared—I'm here to help you conjure the *perfect* prompts. Keep your descriptions clear, and don’t forget lighting and emotion!”<br>
