@@ -35,10 +35,13 @@ has_toc: false
     line-height: 1.5;
     font-style: normal;
     overflow: hidden;
-    opacity: 0; /* Start with the text hidden */
-    transform: translateX(-30px); /* Slide in with the text */
+    opacity: 0;
+    transform: translateX(-30px);
     animation: slideFadeInText 0.6s ease-out forwards;
-    animation-delay: 0.6s; /* Delay to start after the image slides in */
+    animation-delay: 0.6s;
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Ensure long words wrap to the next line */
+    overflow-wrap: break-word; /* Prevent overflow */
   }
 
   .assistant-bubble::after {
