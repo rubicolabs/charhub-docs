@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AI Art
-nav_order: 5
+nav_order: 10
 has_toc: false
 ---
 
@@ -17,9 +17,6 @@ has_toc: false
   }
 
   .tutor-bubble:nth-of-type(2) { animation-delay: 0.2s; }
-  .tutor-bubble:nth-of-type(3) { animation-delay: 0.4s; }
-  .tutor-bubble:nth-of-type(4) { animation-delay: 0.6s; }
-  .tutor-bubble:nth-of-type(5) { animation-delay: 0.8s; }
 
   .tutor-bubble img {
     width: 120px;
@@ -28,8 +25,8 @@ has_toc: false
   }
 
   .assistant-bubble {
-    background-color: #6d4ea0; /* Deep purple */
-    color: #ffffff; /* White text */
+    background-color: #6d4ea0;
+    color: #ffffff;
     border-radius: 1rem;
     border-bottom-left-radius: 0;
     position: relative;
@@ -37,6 +34,8 @@ has_toc: false
     max-width: 700px;
     line-height: 1.5;
     font-style: normal;
+    overflow: hidden;
+    opacity: 0; /* Hide the text initially */
   }
 
   .assistant-bubble::after {
@@ -50,10 +49,44 @@ has_toc: false
     clip-path: polygon(0 0, 100% 0, 0 100%);
   }
 
+  /* Slide in animation */
   @keyframes slideFadeIn {
     to {
       opacity: 1;
       transform: translateX(0);
+    }
+  }
+
+  /* Typewriter animation */
+  .typewriter {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    animation:
+      typing 2.5s steps(60, end) 0.6s forwards,
+      blink 0.8s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+
+  /* Show text after bubble slides in */
+  .tutor-bubble.animation-done .assistant-bubble {
+    opacity: 1;
+    animation: fadeInText 0.6s forwards 0.6s; /* Fade in text after the slide-in */
+  }
+
+  @keyframes fadeInText {
+    to {
+      opacity: 1;
     }
   }
 </style>
@@ -63,82 +96,8 @@ has_toc: false
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
   <div class="assistant-bubble">
-    “Hey there! I'm <strong>Ghost-chan</strong>, and I'm here to help you master AI art. Let's get started!”
-  </div>
-</div>
-
-## Prompt
-
-Prompts define what should be present in the generated image. Charhub automatically augments prompts to ensure that the final output image is of high quality.
-
-### Subject
-
-When describing the subject of your image, be detailed and specific about what you would like. Think about their outfit, the environment, and the overall mood/lighting of the image.
-
-**Okay**: `a wizard`  
-**Good**: `a mysterious wizard, evil smile, ragged pointy hat, intricate robe, long beard`
-
-<div class="tutor-bubble">
-  <img src="/assets/ghostchan.png" alt="Ghost-chan">
-  <div class="assistant-bubble">
-    “More detail means better results! Think: Who is the subject? What are they wearing? Where are they?”
-  </div>
-</div>
-
----
-
-## Negative Prompt
-
-Negative prompts define what you do *not* want present in the image. These can range from styles, colors, to unwanted objects.
-
-**Examples**: `gold`, `cgi`, `earrings`, `watermark`
-
-<div class="tutor-bubble">
-  <img src="/assets/ghostchan.png" alt="Ghost-chan">
-  <div class="assistant-bubble">
-    “Use negative prompts to avoid things like odd fingers, watermarks, or styles you don't want!”
-  </div>
-</div>
-
----
-
-## Image Prompts
-
-Image prompts affect the look & feel of the output image. For example, adding an image of an alleyway to your prompt would result in the AI incorporating elements of the alleyway within the final image. This may be color, style, or subject. The best results are achieved by defining it via prompt AND image prompt.
-
-![image_prompts](/assets/tutorial.png)
-
----
-
-## 🎨 Advanced Prompting Techniques
-
-### ⚖️ Adjusting Prompt Weight
-
-You can fine-tune the importance of a word using the format: `(keyword: weight)`
-
-- `(earrings:1.3)` → Makes earrings more prominent  
-- `(earrings:0.7)` → De-emphasizes earrings  
-
-A weight **greater than 1** increases importance, while **less than 1** decreases it.
-
-<div class="tutor-bubble">
-  <img src="/assets/ghostchan.png" alt="Ghost-chan">
-  <div class="assistant-bubble">
-    “Use weights to emphasize or tone down elements. It’s like turning a dial up or down on certain features!”
-  </div>
-</div>
-
----
-
-## Upscaling / Edit
-
-Once your image is generated, you can use the **Upscale** button to increase the resolution of your image.
-
-If you like the image but want minor changes, use the **Edit** feature to tweak the prompt and regenerate a similar image.
-
-<div class="tutor-bubble">
-  <img src="/assets/ghostchan.png" alt="Ghost-chan">
-  <div class="assistant-bubble">
-    “The Edit tool is awesome when it’s *almost* right—just fine-tune and regenerate!”
+    <span class="typewriter">
+      “Hey there! I'm <strong>Ghost-chan</strong>, and I'm here to help you master AI art. Let's get started!”
+    </span>
   </div>
 </div>
