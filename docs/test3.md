@@ -31,7 +31,8 @@ has_toc: false
     border-bottom-left-radius: 0;
     position: relative;
     padding: 1rem;
-    max-width: 700px;
+    width: auto;  /* Let the width grow based on the text */
+    max-width: 700px;  /* Still limit max width */
     line-height: 1.5;
     font-style: normal;
     overflow: hidden;
@@ -39,9 +40,9 @@ has_toc: false
     transform: translateX(-30px);
     animation: slideFadeInText 0.6s ease-out forwards;
     animation-delay: 0.6s;
-    white-space: normal; /* Allow text to wrap */
-    word-wrap: break-word; /* Ensure long words wrap to the next line */
-    overflow-wrap: break-word; /* Prevent overflow */
+    white-space: normal; /* Ensure wrapping */
+    word-wrap: break-word; /* Break words if they are too long */
+    overflow-wrap: break-word; /* Break word at the end of line */
   }
 
   .assistant-bubble::after {
