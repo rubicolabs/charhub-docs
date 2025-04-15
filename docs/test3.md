@@ -31,18 +31,17 @@ has_toc: false
     border-bottom-left-radius: 0;
     position: relative;
     padding: 1rem;
-    width: auto;  /* Let the width grow based on the text */
-    max-width: 700px;  /* Still limit max width */
+    max-width: 700px; /* Max width to avoid it becoming too wide */
+    width: auto; /* Allow it to expand with the content */
     line-height: 1.5;
     font-style: normal;
-    overflow: hidden;
     opacity: 0;
     transform: translateX(-30px);
     animation: slideFadeInText 0.6s ease-out forwards;
     animation-delay: 0.6s;
-    white-space: normal; /* Ensure wrapping */
-    word-wrap: break-word; /* Break words if they are too long */
-    overflow-wrap: break-word; /* Break word at the end of line */
+    word-wrap: break-word; /* Ensure long words wrap */
+    overflow-wrap: break-word; /* Additional wrapping for long words */
+    white-space: normal; /* Allow text to wrap normally */
   }
 
   .assistant-bubble::after {
