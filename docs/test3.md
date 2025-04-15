@@ -16,10 +16,6 @@ has_toc: false
     animation: slideFadeIn 0.6s ease-out forwards;
   }
 
-  .tutor-bubble:nth-of-type(2) { animation-delay: 0.2s; }
-  .tutor-bubble:nth-of-type(3) { animation-delay: 0.4s; }
-  .tutor-bubble:nth-of-type(4) { animation-delay: 0.6s; }
-
   .tutor-bubble img {
     width: 120px;
     border-radius: 50%;
@@ -40,7 +36,7 @@ has_toc: false
     opacity: 0;
     transform: translateX(-30px);
     animation: slideFadeInText 0.6s ease-out forwards;
-    animation-delay: 0.6s;
+    animation-delay: 0.4s;
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
@@ -73,32 +69,29 @@ has_toc: false
 
   .typewriter {
     display: inline-block;
-    white-space: pre-wrap; /* allows wrapping */
-    overflow: hidden;
     border-right: 2px solid white;
-    animation:
-      typing 2s steps(60, end) forwards,
-      blink 0.8s step-end infinite;
-    max-width: 100%;
+    white-space: pre-wrap;
+    overflow: hidden;
+    animation: typing 3s steps(80, end) forwards, blink 0.8s step-end infinite;
   }
 
   @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from { max-width: 0; }
+    to { max-width: 100%; }
   }
 
   @keyframes blink {
-    from, to { border-color: transparent }
+    0%, 100% { border-color: transparent }
     50% { border-color: white }
   }
 </style>
 
-<!-- Example usage -->
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
   <div class="assistant-bubble">
-    <span class="typewriter">
+    <div class="typewriter">
       “Hey there! I'm Ghost-chan, and I'm here to help you master AI art. Let's dive deep into how prompts and image settings affect your results, and how to use negative prompts, image conditioning, and editing to your advantage.”
-    </span>
+    </div>
   </div>
 </div>
+
