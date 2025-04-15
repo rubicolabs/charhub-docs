@@ -35,7 +35,10 @@ has_toc: false
     line-height: 1.5;
     font-style: normal;
     overflow: hidden;
-    opacity: 0; /* Hide the text initially */
+    opacity: 0; /* Start with the text hidden */
+    transform: translateX(-30px); /* Slide in with the text */
+    animation: slideFadeInText 0.6s ease-out forwards;
+    animation-delay: 0.6s; /* Delay to start after the image slides in */
   }
 
   .assistant-bubble::after {
@@ -49,8 +52,16 @@ has_toc: false
     clip-path: polygon(0 0, 100% 0, 0 100%);
   }
 
-  /* Slide in animation */
+  /* Slide in animation for tutor-bubble */
   @keyframes slideFadeIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Slide in animation for assistant-bubble */
+  @keyframes slideFadeInText {
     to {
       opacity: 1;
       transform: translateX(0);
@@ -76,18 +87,6 @@ has_toc: false
   @keyframes blink {
     from, to { border-color: transparent }
     50% { border-color: white }
-  }
-
-  /* Show text after bubble slides in */
-  .tutor-bubble.animation-done .assistant-bubble {
-    opacity: 1;
-    animation: fadeInText 0.6s forwards 0.6s; /* Fade in text after the slide-in */
-  }
-
-  @keyframes fadeInText {
-    to {
-      opacity: 1;
-    }
   }
 </style>
 
