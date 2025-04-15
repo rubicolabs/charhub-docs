@@ -177,7 +177,7 @@ nav_order: 10
             
             <div class="mt-8 pt-4 border-t border-gray-200">
                 <div class="flex items-center">
-                    <img src="https://i.imgur.com/JQl1h1N.png" alt="Assistant" class="w-10 h-10 rounded-full mr-2">
+                    <img src="https://charhub.ai/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTY5MjM5MCwicHVyIjoiYmxvYl9pZCJ9fQ==--6ff9edba5c3d8cfb4e2e39fb599c47f33165ffb4/4af3f9cb-c3a1-4b7d-b9e4-2c5e82b8be04.png" alt="Assistant" class="w-10 h-10 rounded-full mr-2">
                     <div>
                         <p class="text-sm font-medium">Your AI Art Assistant</p>
                         <p class="text-xs text-gray-500">Ready to help!</p>
