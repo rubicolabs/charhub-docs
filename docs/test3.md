@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AI Art
-nav_order: 10
+nav_order: 5
 has_toc: false
 ---
 
@@ -11,12 +11,23 @@ has_toc: false
     align-items: flex-start;
     gap: 1rem;
     margin: 2rem 0;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideFadeIn 0.6s ease-out forwards;
   }
+
+  /* Delay each bubble */
+  .tutor-bubble:nth-of-type(2) { animation-delay: 0.2s; }
+  .tutor-bubble:nth-of-type(3) { animation-delay: 0.4s; }
+  .tutor-bubble:nth-of-type(4) { animation-delay: 0.6s; }
+  .tutor-bubble:nth-of-type(5) { animation-delay: 0.8s; }
+
   .tutor-bubble img {
     width: 120px;
     border-radius: 10px;
     flex-shrink: 0;
   }
+
   .bubble-box {
     position: relative;
     background-color: #eef;
@@ -26,6 +37,7 @@ has_toc: false
     font-style: italic;
     max-width: 700px;
   }
+
   .bubble-box::before {
     content: "";
     position: absolute;
@@ -36,6 +48,13 @@ has_toc: false
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 20px solid #eef;
+  }
+
+  @keyframes slideFadeIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 </style>
 
@@ -123,4 +142,3 @@ If you like the image but want minor changes, use the **Edit** feature to tweak 
     “The Edit tool is awesome when it’s *almost* right—just fine-tune and regenerate!”
   </div>
 </div>
-
