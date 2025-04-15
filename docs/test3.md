@@ -2,7 +2,7 @@
 layout: default
 title: AI Art
 nav_order: 10
-has_toc: false
+
 ---
 
 <style>
@@ -16,7 +16,6 @@ has_toc: false
     animation: slideFadeIn 0.6s ease-out forwards;
   }
 
-  /* Delay each bubble */
   .tutor-bubble:nth-of-type(2) { animation-delay: 0.2s; }
   .tutor-bubble:nth-of-type(3) { animation-delay: 0.4s; }
   .tutor-bubble:nth-of-type(4) { animation-delay: 0.6s; }
@@ -24,30 +23,28 @@ has_toc: false
 
   .tutor-bubble img {
     width: 120px;
-    border-radius: 10px;
+    border-radius: 50%;
     flex-shrink: 0;
   }
 
-  .bubble-box {
+  .assistant-bubble {
+    background-color: #f3e8ff;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
     position: relative;
-    background-color: #eef;
-    border-radius: 10px;
-    padding: 15px 20px;
-    font-size: 16px;
-    font-style: italic;
+    padding: 1rem;
     max-width: 700px;
   }
 
-  .bubble-box::before {
-    content: "";
+  .assistant-bubble::after {
+    content: '';
     position: absolute;
-    left: -20px;
-    top: 30%;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 20px solid #eef;
+    left: 0;
+    bottom: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #f3e8ff;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
   }
 
   @keyframes slideFadeIn {
@@ -62,7 +59,7 @@ has_toc: false
 
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
-  <div class="bubble-box">
+  <div class="assistant-bubble">
     “Hey there! I'm <strong>Ghost-chan</strong>, and I'm here to help you master AI art. Let's get started!”
   </div>
 </div>
@@ -80,7 +77,7 @@ When describing the subject of your image, be detailed and specific about what y
 
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
-  <div class="bubble-box">
+  <div class="assistant-bubble">
     “More detail means better results! Think: Who is the subject? What are they wearing? Where are they?”
   </div>
 </div>
@@ -95,7 +92,7 @@ Negative prompts define what you do *not* want present in the image. These can r
 
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
-  <div class="bubble-box" style="background-color: #fce4ec;">
+  <div class="assistant-bubble">
     “Use negative prompts to avoid things like odd fingers, watermarks, or styles you don't want!”
   </div>
 </div>
@@ -123,7 +120,7 @@ A weight **greater than 1** increases importance, while **less than 1** decrease
 
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
-  <div class="bubble-box" style="background-color: #e0f7fa;">
+  <div class="assistant-bubble">
     “Use weights to emphasize or tone down elements. It’s like turning a dial up or down on certain features!”
   </div>
 </div>
@@ -138,7 +135,7 @@ If you like the image but want minor changes, use the **Edit** feature to tweak 
 
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
-  <div class="bubble-box" style="background-color: #fff3cd;">
+  <div class="assistant-bubble">
     “The Edit tool is awesome when it’s *almost* right—just fine-tune and regenerate!”
   </div>
 </div>
