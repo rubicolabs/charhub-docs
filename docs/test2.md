@@ -1,7 +1,6 @@
 ---
 layout: default
-title: AI Art
-nav_order: 10
+
 ---
 <!DOCTYPE html>
 <html lang="en">
