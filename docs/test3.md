@@ -17,6 +17,9 @@ has_toc: false
   }
 
   .tutor-bubble:nth-of-type(2) { animation-delay: 0.2s; }
+  .tutor-bubble:nth-of-type(3) { animation-delay: 0.4s; }
+  .tutor-bubble:nth-of-type(4) { animation-delay: 0.6s; }
+  .tutor-bubble:nth-of-type(5) { animation-delay: 0.8s; }
 
   .tutor-bubble img {
     width: 120px;
@@ -70,18 +73,18 @@ has_toc: false
   }
 
   .typewriter {
-    display: inline-block;
-    white-space: nowrap;
+    display: block;
     overflow: hidden;
     border-right: 2px solid white;
     animation:
       typing 2.5s steps(60, end) 0.6s forwards,
       blink 0.8s step-end infinite;
+    max-width: 100%;
   }
 
   @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from { width: 0ch }
+    to { width: 100ch }
   }
 
   @keyframes blink {
@@ -95,7 +98,9 @@ has_toc: false
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
   <div class="assistant-bubble">
-    <span class="typewriter">“Hey there! I'm <strong>Ghost-chan</strong>, and I'm here to help you master AI art. Let's get started!”</span>
+    <span class="typewriter">
+      “Hey there! I'm <strong>Ghost-chan</strong>, and I'm here to help you master AI art. Let's get started!”
+    </span>
   </div>
 </div>
 
@@ -113,7 +118,9 @@ When describing the subject of your image, be detailed and specific about what y
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
   <div class="assistant-bubble">
-    <span class="typewriter">“More detail means better results! Think: Who is the subject? What are they wearing? Where are they?”</span>
+    <span class="typewriter">
+      “More detail means better results! Think: Who is the subject? What are they wearing? Where are they?”
+    </span>
   </div>
 </div>
 
@@ -128,7 +135,9 @@ Negative prompts define what you do *not* want present in the image. These can r
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
   <div class="assistant-bubble">
-    <span class="typewriter">“Use negative prompts to avoid things like odd fingers, watermarks, or styles you don't want!”</span>
+    <span class="typewriter">
+      “Use negative prompts to avoid things like odd fingers, watermarks, or styles you don't want!”
+    </span>
   </div>
 </div>
 
@@ -156,7 +165,9 @@ A weight **greater than 1** increases importance, while **less than 1** decrease
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
   <div class="assistant-bubble">
-    <span class="typewriter">“Use weights to emphasize or tone down elements. It’s like turning a dial up or down on certain features!”</span>
+    <span class="typewriter">
+      “Use weights to emphasize or tone down elements. It’s like turning a dial up or down on certain features!”
+    </span>
   </div>
 </div>
 
@@ -171,7 +182,9 @@ If you like the image but want minor changes, use the **Edit** feature to tweak 
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
   <div class="assistant-bubble">
-    <span class="typewriter">“The Edit tool is awesome when it’s *almost* right—just fine-tune and regenerate!”</span>
+    <span class="typewriter">
+      “The Edit tool is awesome when it’s *almost* right—just fine-tune and regenerate!”
+    </span>
   </div>
 </div>
 
