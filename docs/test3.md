@@ -31,6 +31,7 @@ has_toc: false
     position: relative;
     padding: 1rem;
     max-width: 700px;
+    min-width: 200px; /* Minimum width to prevent shrinking too much */
     width: auto;
     line-height: 1.5;
     font-style: normal;
@@ -41,6 +42,7 @@ has_toc: false
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
+    word-break: break-word; /* Ensure text wraps inside bubble */
   }
 
   .assistant-bubble::after {
@@ -102,7 +104,7 @@ has_toc: false
     }
   }
 
-  // Start after animation delay
+  // Start typing after animation delay to sync with bubble animation
   setTimeout(type, 800);
 </script>
 
