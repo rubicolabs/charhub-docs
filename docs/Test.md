@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AI Art Tutorial
-nav_order: 99
+nav_order: 10
 ---
 
 # AI Art Tutorial
