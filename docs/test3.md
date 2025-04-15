@@ -2,7 +2,7 @@
 layout: default
 title: AI Art
 nav_order: 10
-
+has_toc: false
 ---
 
 <style>
@@ -16,6 +16,7 @@ nav_order: 10
     animation: slideFadeIn 0.6s ease-out forwards;
   }
 
+  /* Delay each bubble */
   .tutor-bubble:nth-of-type(2) { animation-delay: 0.2s; }
   .tutor-bubble:nth-of-type(3) { animation-delay: 0.4s; }
   .tutor-bubble:nth-of-type(4) { animation-delay: 0.6s; }
@@ -28,12 +29,18 @@ nav_order: 10
   }
 
   .assistant-bubble {
-    background-color: #f3e8ff;
+    background-color: #a98ae6;
+    color: #fff;
     border-radius: 1rem;
     border-bottom-left-radius: 0;
     position: relative;
     padding: 1rem;
     max-width: 700px;
+    font-style: italic;
+  }
+
+  .assistant-bubble strong {
+    color: #ffffff;
   }
 
   .assistant-bubble::after {
@@ -43,7 +50,7 @@ nav_order: 10
     bottom: -10px;
     width: 20px;
     height: 20px;
-    background-color: #f3e8ff;
+    background-color: #a98ae6;
     clip-path: polygon(0 0, 100% 0, 0 100%);
   }
 
