@@ -4,7 +4,6 @@ title: AI Art
 nav_order: 10
 ---
 
-
 <style>
   .tutor-bubble {
     display: flex;
@@ -29,11 +28,10 @@ nav_order: 10
     width: fit-content;
     line-height: 1.5;
     font-style: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-    word-break: break-word;
+    white-space: pre-wrap;
     position: relative;
+    overflow: hidden;
+    min-height: 3em;
   }
 
   .assistant-bubble::after {
@@ -47,6 +45,30 @@ nav_order: 10
     clip-path: polygon(0 0, 100% 0, 0 100%);
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const bubbles = document.querySelectorAll(".assistant-bubble");
+
+    bubbles.forEach((bubble) => {
+      const fullText = bubble.innerHTML.trim();
+      bubble.innerHTML = ""; // Clear bubble
+      let i = 0;
+
+      const type = () => {
+        if (i <= fullText.length) {
+          bubble.innerHTML = fullText.slice(0, i) + "<span class='cursor'>▋</span>";
+          i++;
+          setTimeout(type, 15); // speed of typing
+        } else {
+          bubble.innerHTML = fullText; // cleanup cursor
+        }
+      };
+
+      type();
+    });
+  });
+</script>
 
 # AI Art Generation
 
