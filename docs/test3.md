@@ -1,8 +1,9 @@
 ---
 layout: default
-title: 
-
+title: AI Art
+nav_order: 10
 ---
+
 <style>
   .tutor-bubble {
     display: flex;
@@ -30,6 +31,7 @@ title:
     position: relative;
     padding: 1rem;
     max-width: 700px;
+    min-width: 300px;
     width: auto;
     line-height: 1.5;
     font-style: normal;
@@ -40,6 +42,8 @@ title:
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
+    word-break: break-word;
+    min-height: 4.5em; /* roughly 3 lines of text */
   }
 
   .assistant-bubble::after {
@@ -105,8 +109,8 @@ Prompts define what should be present in the generated image. Charhub automatica
 
 When describing the subject of your image, be detailed and specific about what you would like. Think about their outfit, the environment, and the overall mood/lighting of the image.
 
-**Okay**: a wizard  
-**Good**: a mysterious wizard, evil smile, ragged pointy hat, intricate robe, long beard
+**Okay**: `a wizard`  
+**Good**: `a mysterious wizard, evil smile, ragged pointy hat, intricate robe, long beard`
 
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
@@ -121,7 +125,7 @@ When describing the subject of your image, be detailed and specific about what y
 
 Negative prompts define what you do *not* want present in the image. These can range from styles, colors, to unwanted objects.
 
-**Examples**: gold, cgi, earrings, watermark
+**Examples**: `gold`, `cgi`, `earrings`, `watermark`
 
 <div class="tutor-bubble">
   <img src="/assets/ghostchan.png" alt="Ghost-chan">
@@ -144,10 +148,10 @@ Image prompts affect the look & feel of the output image. For example, adding an
 
 ### ⚖️ Adjusting Prompt Weight
 
-You can fine-tune the importance of a word using the format: (keyword: weight)
+You can fine-tune the importance of a word using the format: `(keyword: weight)`
 
-- (earrings:1.3) → Makes earrings more prominent  
-- (earrings:0.7) → De-emphasizes earrings  
+- `(earrings:1.3)` → Makes earrings more prominent  
+- `(earrings:0.7)` → De-emphasizes earrings  
 
 A weight **greater than 1** increases importance, while **less than 1** decreases it.
 
