@@ -1,6 +1,6 @@
 ---
 layout: default
-title: AI Art
+title: 
 
 ---
 <style>
